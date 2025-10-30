@@ -11,6 +11,7 @@ export default function HeroSection() {
   const parallax2 = useRef(null);
 
   useEffect(() => {
+    // ----- GSAP ScrollTrigger -----
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".hero",
@@ -25,32 +26,44 @@ export default function HeroSection() {
       .to(parallax1.current, { y: -300 }, 0)
       .to(parallax2.current, { y: -150 }, 0);
 
-    // Видео loop
+    // ----- Video loop -----
     const video = videoRef.current;
-    video.playbackRate = 0.7;
-    video.play();
-    video.addEventListener("ended", () => video.play());
+    if (video) {
+      video.playbackRate = 0.7;
+      video.play().catch(() => {});
+      video.addEventListener("ended", () => video.play());
+    }
   }, []);
 
   return (
     <section className="hero">
-      <video ref={videoRef} className="bg-video" muted playsInline>
-        <source src="/video-bg.mp4" type="video/mp4" />
+      {/* 1. Видео‑фон */}
+      <video
+        ref={videoRef}
+        className="bg-video"
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/hero-loop.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
+      {/* 2. Параллакс‑слои (из public) */}
       <img
         ref={parallax1}
-        src="/layer1.png"
+        src="/layer2.png"
         className="parallax layer1"
-        alt=""
+        alt="Parallax background layer 1"
       />
       <img
         ref={parallax2}
-        src="/layer2.png"
+        src="/layer1.png"
         className="parallax layer2"
-        alt=""
+        alt="Parallax background layer 2"
       />
 
+      {/* 3. Текст */}
       <div className="hero-content">
         <h1 ref={titleRef}>ZERO LIMITS</h1>
         <p ref={subtitleRef}>Break through the boundaries of imagination</p>

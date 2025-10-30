@@ -37,7 +37,6 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
-      {/* 1. Видео‑фон */}
       <video
         ref={videoRef}
         className="bg-video"
@@ -49,7 +48,6 @@ export default function HeroSection() {
         Your browser does not support the video tag.
       </video>
 
-      {/* 2. Параллакс‑слои (из public) */}
       <img
         ref={parallax1}
         src="/layer2.png"
@@ -63,7 +61,6 @@ export default function HeroSection() {
         alt="Parallax background layer 2"
       />
 
-      {/* 3. Текст */}
       <div className="hero-content">
         <h1 ref={titleRef}>ZERO LIMITS</h1>
         <p ref={subtitleRef}>Break through the boundaries of imagination</p>

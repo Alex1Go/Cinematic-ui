@@ -49,9 +49,7 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    /* Стандартное — поддерживается везде */
     -webkit-text-fill-color: transparent;
-    /* Оставляем только webkit */
     margin-bottom: 1rem;
 }
 
@@ -82,7 +80,6 @@ main {
     font-family: 'Cinzel', serif;
     color: #111;
     -webkit-text-stroke: 2px #d4af37;
-    /* Оставляем только webkit */
     opacity: 0.3;
 }
 
@@ -92,9 +89,8 @@ main {
     background: linear-gradient(90deg, #d4af37, #fff);
     -webkit-background-clip: text;
     background-clip: text;
-    /* Стандартное */
     -webkit-text-fill-color: transparent;
-    /* Только webkit */
+
 }
 
 .section-content p {

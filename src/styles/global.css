@@ -26,12 +26,12 @@
 
 .layer1 {
     bottom: 10%;
-    height: 50%;
+    height: auto;
 }
 
 .layer2 {
     bottom: 10%;
-    height: 50%;
+    height: auto;
     opacity: 0.7;
 }
 

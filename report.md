@@ -2,9 +2,7 @@
 
 ## Live Demo
 
-## Video Walkthrough
-
-[Watch on Google Drive](https://)
+[https://alex1go.github.io/Cinematic-ui/](https://alex1go.github.io/Cinematic-ui/)
 
 ## Key Decisions
 

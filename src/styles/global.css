@@ -17,10 +17,10 @@
 
 .parallax {
     position: absolute;
-    max-width: 1200px;
-    width: 120%;
-    left: -50%;
-    transform: translateX(50%);
+    /* max-width: 1200px; */
+    width: 105%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     pointer-events: none;
 }

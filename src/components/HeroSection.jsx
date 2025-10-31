@@ -44,19 +44,19 @@ export default function HeroSection() {
         playsInline
         preload="auto"
       >
-        <source src="/hero-loop.mp4" type="video/mp4" />
+        <source src="./hero-loop.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <img
         ref={parallax1}
-        src="/layer2.png"
+        src="./layer2.png"
         className="parallax layer1"
         alt="Parallax background layer 1"
       />
       <img
         ref={parallax2}
-        src="/layer1.png"
+        src="./layer1.png"
         className="parallax layer2"
         alt="Parallax background layer 2"
       />

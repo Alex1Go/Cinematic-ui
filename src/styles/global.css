@@ -17,6 +17,7 @@
 
 .parallax {
     position: absolute;
+    max-width: 1200px;
     width: 120%;
     left: -10%;
     z-index: 2;
@@ -24,13 +25,13 @@
 }
 
 .layer1 {
-    bottom: 0;
-    height: 80%;
+    bottom: 10%;
+    height: 50%;
 }
 
 .layer2 {
     bottom: 10%;
-    height: 60%;
+    height: 50%;
     opacity: 0.7;
 }
 

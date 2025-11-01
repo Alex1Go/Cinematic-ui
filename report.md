@@ -4,6 +4,10 @@
 
 [https://alex1go.github.io/Cinematic-ui/](https://alex1go.github.io/Cinematic-ui/)
 
+## Video
+
+[https://drive.google.com/file/d/1bOnBG3Al_l2WpLxClE28nsuwIXotC4LH/view?usp=sharing](https://drive.google.com/file/d/1bOnBG3Al_l2WpLxClE28nsuwIXotC4LH/view?usp=sharing)
+
 ## Key Decisions
 
 - **Stack**: React + Vite + GSAP + CSS
